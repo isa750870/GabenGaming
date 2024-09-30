@@ -1,0 +1,134 @@
+#top1 {
+    font-size: 40px;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: bold;
+}
+
+header{
+    padding: 20px;
+    text-align: center;
+    background: #6d7199;
+    color: white;
+    border-radius: 40px;
+    margin: 10px;
+}
+
+#about1{
+    font-family: "Comfortaa", sans-serif;
+    font-weight: bold;
+    line-height: 30px;
+    word-wrap: break-word;
+    max-width: 60vmax;
+}
+
+header h1{
+    font-size: 40px;
+}
+
+main {
+    background-color: rgb(227, 227, 227);
+    padding: 40px;
+    background: #6d7199;
+    color: white;
+    border-radius: 40px;
+    margin: 10px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+#top3 {
+    font-size: 20px;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+#top2 {
+    color: white;
+    text-decoration: none;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: bold;
+    background-color: #414248;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+body{
+    margin: 0px 0px 0px 0px;
+    background-color: rgb(227, 227, 227);
+    min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+nav {
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    top: 3px;
+    margin: 0 auto;
+    width: 375px;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: bold;
+}
+
+main p{
+    font-family: "Comfortaa", sans-serif;
+    font-weight: bold;
+}
+
+main h3{
+    font-family: "Comfortaa", sans-serif;
+    font-weight: bold;
+}
+
+h2{
+    font-family: "Comfortaa", sans-serif;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+footer {
+    padding: 10px;
+    text-align: left;
+    background: #333;
+}
+
+address a{
+    color: white;
+    text-decoration: none;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: bold;
+}
+
+aside {
+    padding-left: 0.5rem;
+    margin-left: 0.5rem;
+    float: right;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    color: #29627e;
+}
+
+aside > p {
+    margin: 0.5rem;
+}
+
+nav a:visited { 
+    color: rgb(222, 169, 222); /* Цвет посещенных ссылок */
+}
+nav a:hover { 
+    color: rgb(81, 76, 76); /* Цвет ссылок при наведении на них курсора мыши */
+}
+nav a:active { 
+    color: rgb(99, 80, 225); /* Цвет активных ссылок */
+}
