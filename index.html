@@ -6,30 +6,83 @@
     <title>GabenGaming</title>
     <link rel="icon" type="image/png" href="fav.ico">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    
 </head>
 <body>
-    <header>
-        <h1 id="top1"><img src="fav.png" height="40" width="35" id="gabe">  Gaben Gaming</h1>
+    <header id="h">
+        <h1 id="top1"><a href="index.html"><img src="fav.png" height="40" width="35" id="gabe"></a>  Gaben Gaming</h1>
         <h3 id="top3">Сайт о современных игровых приставках</h3>
     </header>
     <nav>
-        <a href="#sony">Sony</a>
+        <a href="sony.html">Sony</a>
         <a href="#switch">Nintendo</a>
         <a href="#xbox">Xbox</a>
         <a href="#deck">Valve</a>
     </nav>
-    <main>
-    <h2 id="about1">О сайте</h2>
-        <p id="about1">Современные игровые приставки представляют собой удивительное сочетание передовых технологий, потрясающей графики и захватывающего геймплея. Они способны подарить пользователям невероятные эмоции и погрузить в увлекательные миры виртуальных приключений.</p>
-        <p id="about1">На нашем сайте вы найдете обзоры на самые популярные игровые приставки на рынке, такие как PlayStation, Xbox, Nintendo Switch и другие. Мы расскажем вам об их технических характеристиках, уникальных возможностях и самых ожидаемых играх.</p>
-        <p id="about1">Будьте в курсе всех новинок в мире игровых приставок с нашим сайтом и наслаждайтесь игровым процессом на новом уровне!</p>
-    <h2><a id="top2" href="#top1">Наверх</a></h2>
+    <button id="backToTop" class="back-to-top">Наверх</button>
+    <main id="m">
+    <h2 id="about2"><b>О Сайте</b></h2>
+    <p id="about1"><b>Современные игровые приставки</b> представляют собой удивительное сочетание передовых технологий, потрясающей графики и захватывающего геймплея. Они способны подарить пользователям невероятные эмоции и погрузить в увлекательные миры виртуальных приключений.</p>
+    <p id="about1">На нашем сайте вы найдете обзоры на самые популярные игровые приставки на рынке, такие как PlayStation, Xbox, Nintendo Switch и другие. Мы расскажем вам об их технических характеристиках, уникальных возможностях и самых ожидаемых играх.</p>
+    <div class="cards">
+      <div class="card">
+        <h2 class="card-title">PlayStation</h2>
+        <img src="PS5.jpg" alt="">
+        <p class="card-desc">Откройте невероятные игровые возможности с консолями PlayStation®5 и PS5®, цифровое издание.</p>
+      </div>
+      <div class="card">
+        <h2 class="card-title">Xbox</h2>
+        <img src="XBOX.jpg" alt="">
+        <p class="card-desc">Отправляйтесь в новые приключения и наслаждайтесь ими в том виде, в котором они задумывались, вместе с Xbox Series X.</p>
+      </div>
+      <div class="card">
+        <h2 class="card-title">Switch</h2>
+        <img src="Switch.png" alt="">
+        <p class="card-desc">Три режима в одном
+          Nintendo Switch разработана с учетом ваших потребностей, быстро превращаясь из домашней консоли в портативную систему.</p>
+      </div>
+      <div class="card">
+        <h2 class="card-title">Steam Deck</h2>
+        <img src="Deck.jpg" alt="">
+        <p class="card-desc">Функциональный портативный игровой компьютер Steam Deck</p>
+      </div>
+    </div>
+    <p id="about11">Будьте в курсе всех новинок в мире игровых приставок с нашим сайтом и наслаждайтесь игровым процессом на новом уровне!</p>
+    <div id="CIT">
+        <img src="Gaben.PNG" height="300" width="300" id="Gaben">
+        <div>
+            <blockquote id="about3">"Консоли — это не просто кусок железа, это дверь в другой мир, где ты можешь стать кем угодно и сделать что угодно. Не ограничивай свои возможности, открывай новые горизонты с помощью консолей."</blockquote>
+            <p id="Author">- Гейб Ньювелл</p>
+        </div>
+        
+    </div>
     </main>
     <footer>
-        <address>
-            <a>Работа выполнена Ильином Кириллом ИКБО-21-23</a>
-        </address>
-    </footer>
+        <div class="footer-container">
+          <div class="left-col">
+            <p class="jojo">Gaben<span style="color: #6d7199;">Gaming</span></p>
+            <div class="social-media">
+              <a href="#"><i class="fab fa-vk"></i></a>
+              <a href="#"><i class="fab fa-google"></i></a>
+              <a href="#"><i class="fab fa-odnoklassniki"></i></a>
+              <a href="#"><i class="fab fa-whatsapp"></i></a>
+              <a href="#"><i class="fab fa-telegram"></i></a>
+            </div>
+          </div>
+   
+          <div class="right-col">
+            <h1>Новостная Рассылка</h1>
+            <div class="border"></div>
+            <p class="email">Введите свою электронную почту чтобы получать новости.</p>
+            <form action="" class="newsletter-form" id="newsletterForm">
+                <input type="email" class="txtb" id="emailInput" placeholder="Введите почту" required>
+                <input type="submit" class="fbtn" value="Отправить">
+            </form>
+          </div>
+        </div>
+      </footer>
+  <script src="java.js"></script>
 </body>
 </html>
