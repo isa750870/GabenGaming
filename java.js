@@ -53,3 +53,44 @@ document.getElementById('newsletterForm').addEventListener('submit', function(ev
         alert('Введите корректную почту');
     }
 });
+
+const prevButton = document.querySelector('.carousel-control-prev');
+const nextButton = document.querySelector('.carousel-control-next');
+const carouselInner = document.querySelector('.carousel-inner');
+const items = document.querySelectorAll('.carousel-item');
+let currentIndex = 0;
+
+function updateCarousel() {
+  const offset = -currentIndex * 100;
+  carouselInner.style.transform = `translateX(${offset}%)`;
+}
+
+// Переход к предыдущему слайду
+prevButton.addEventListener('click', () => {
+  if (currentIndex > 0) {
+    currentIndex--;
+  } else {
+    currentIndex = items.length - 1;
+  }
+  updateCarousel();
+});
+
+// Переход к следующему слайду
+nextButton.addEventListener('click', () => {
+  if (currentIndex < items.length - 1) {
+    currentIndex++;
+  } else {
+    currentIndex = 0;
+  }
+  updateCarousel();
+});
+
+// Автопрокрутка (можно отключить, если не нужно)
+setInterval(() => {
+  if (currentIndex < items.length - 1) {
+    currentIndex++;
+  } else {
+    currentIndex = 0;
+  }
+  updateCarousel();
+}, 5000); // каждые 5 секунд
