@@ -1,3 +1,7 @@
+document.getElementById('burger-menu').addEventListener('click', function() {
+  document.getElementById('menu').classList.toggle('open');
+  document.getElementById('burger-menu').classList.toggle('open');
+});
 const backToTopButton = document.getElementById('backToTop');
 window.onscroll = function() {
     const scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
