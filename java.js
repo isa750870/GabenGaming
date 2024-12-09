@@ -7,7 +7,7 @@ window.onscroll = function() {
     const scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
     
     if (scrollTop > 100) {
-        backToTopButton.style.opacity = Math.min((scrollTop - 100) / 50, 1);
+        backToTopButton.style.opacity = 50;
         backToTopButton.style.transform = `translateY(0)`;
         backToTopButton.style.pointerEvents = 'auto';
     } else {
