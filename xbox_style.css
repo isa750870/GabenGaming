@@ -79,24 +79,7 @@ footer{
     min-width: 260px;
 }
 
-@media screen and (max-width:960px) {
-    .footer-container{
-      max-width: 600px;
-    }
-    .right-col{
-      width: 100%;
-      margin-bottom: 60px;
-    }
-   
-    .left-col{
-      width: 100%;
-      text-align: center;
-    }
 
-    .fbtn{
-        margin-top: 10px;
-    }
-}
 
 .fbtn{
     padding: 18px 40px;
@@ -175,28 +158,7 @@ address a{
 }
 
 /* Адаптивность для мобильных устройств */
-@media (max-width: 768px) {
-    .menu {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 50px;
-        background-color: #333;
-        width: 100%;
-        left: 0;
-        text-align: center;
-    }
 
-    .menu a {
-        padding: 20px;
-        border-top: 1px solid #444;
-        
-    }
-
-    .burger {
-        display: block;
-    }
-}
 
 /* Когда бургер-меню открыто */
 .menu.open {
@@ -260,14 +222,7 @@ address a{
 }
 
 
-@media all and (max-width: 750px){
-    #CIT{
-        display: inline-flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-}
+
 
 #h{
     padding: 20px;
@@ -498,12 +453,35 @@ body {
     border-radius: 4px;
   }
 
-  /* Адаптивность */
-  @media (max-width: 1200px) {
+
+
+  @media (max-width: 480px) {
     .gallery {
-        grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 1fr;
     }
   }
+  @media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        background-color: #333;
+        width: 100%;
+        left: 0;
+        text-align: center;
+    }
+
+    .menu a {
+        padding: 20px;
+        border-top: 1px solid #444;
+        
+    }
+
+    .burger {
+        display: block;
+    }
+}
 
   @media (max-width: 800px) {
     .gallery {
@@ -511,8 +489,28 @@ body {
     }
   }
 
-  @media (max-width: 480px) {
+  @media (max-width:960px) {
+    .footer-container{
+      max-width: 600px;
+    }
+    .right-col{
+      width: 100%;
+      margin-bottom: 60px;
+    }
+   
+    .left-col{
+      width: 100%;
+      text-align: center;
+    }
+
+    .fbtn{
+        margin-top: 10px;
+    }
+}
+  /* Адаптивность */
+  @media (max-width: 1200px) {
     .gallery {
-      grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
   }
+
